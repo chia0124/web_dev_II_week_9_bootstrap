@@ -1,0 +1,21 @@
+/* We can override the default bootstrap variables with our own values. */
+:root,
+[data-bs-theme=light] {
+    --bs-primary-rgb: 220, 20, 60;
+    --bs-link-color-rgb: 255, 0, 255;
+    --bs-link-hover-color-rgb: 200, 0, 200;
+    
+    --bs-font-sans-serif: "Host Grotesk", sans-serif
+}
+
+[data-bs-theme=dark] {
+    --bs-primary-rgb: 0, 20, 0;
+    --bs-link-color-rgb: 255, 0, 255;
+    --bs-link-hover-color-rgb: 200, 0, 200;
+
+    --bs-font-sans-serif: "Host Grotesk", sans-serif;
+}
+/* Adding your own styles is still encouraged */
+.fancy-heading {
+    border-bottom: 2px solid green;
+}

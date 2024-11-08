@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <header class="bg-primary p-2 text-light mb-5">
+        <h1 class="m-0">My site!</h1>
+    </header>
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <h2>Hello, world!</h2>
+        <h6>Hello, world!</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, dicta! Autem ipsum ipsa eum sit nam similique necessitatibus quas, exercitationem voluptatum, esse facere laborum voluptates, natus laboriosam vitae corrupti quasi.</p>
+
+        <h1 class="display-1">Heading Classes</h1>
+        <hr>
+        
+        <!-- h1 through h6 classes can be used to apply styles to non-heading elements like divs -->
+        <div class="h1">Header 1</div>
+        <div class="h2">Header 2</div>
+        <div class="h3">Header 3</div>
+        <div class="h4">Header 4</div>
+        <div class="h5">Header 5</div>
+        <div class="h6">Header 6</div>
+
+        <!-- Display classes are used to create bigger heading styles -->
+        <div class="display-1">Heading 1</div>
+        <div class="display-2">Heading 2</div>
+        <div class="display-3">Heading 3</div>
+        <div class="display-4">Heading 4</div>
+        <div class="display-5">Heading 5</div>
+        <div class="display-6">Heading 6</div>
+
+        <h1 class="display-1">Text Utilities</h1>
+        <hr>
+
+        <!-- alignment classes let us set text to the left, right, or center. Beware that in bootstrap v5, text-left text-right and text-justify were removed. -->
+        <p class="text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur quisquam facere architecto suscipit natus harum corrupti itaque est nisi, ex iste eligendi, delectus reiciendis. Delectus suscipit nesciunt laboriosam similique?</p>
+        <p class="text-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur quisquam facere architecto suscipit natus harum corrupti itaque est nisi, ex iste eligendi, delectus reiciendis. Delectus suscipit nesciunt laboriosam similique?</p>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur quisquam facere architecto suscipit natus harum corrupti itaque est nisi, ex iste eligendi, delectus reiciendis. Delectus suscipit nesciunt laboriosam similique?</p>
+
+        <!-- we can use breakpoint infixes (sm, md, lg, xl) to conditionally apply these (and other) styles at particular viewport widths -->
+        <p class="text-start text-md-center text-lg-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur quisquam facere architecto suscipit natus harum corrupti itaque est nisi, ex iste eligendi, delectus reiciendis. Delectus suscipit nesciunt laboriosam similique?</p>
+
+        <!-- text-transform can be set with these classes -->
+        <p class="text-lowercase">Lowercase text</p>
+        <p class="text-uppercase">Uppercase text</p>
+        <p class="text-capitalize">Capitalized text</p>
+
+        <!-- fw and fst let us set the font weight and style of the text. Beware, older versions of bootstrap use font-weight-bold and font-italic -->
+        <p class="fw-bold">Bold text</p>
+        <h2 class="fw-normal">Normal weight h2</h2>
+        <h2 class="fw-light">Light weight h2</h2>
+        <p class="fst-italic">Italic text</p>
+
+        <!-- we can remove the colour and underline from links this way. These classes work on other elements too. -->
+        <a href="#">This is a link</a>
+        <a href="#" class="text-decoration-none text-reset">This is a link</a>
+
+        <!-- we can remove the styling from lists, and/or display them inline, which can be handy for navigation links. -->
+        <ul class="list-unstyled">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </li>
+            <li>List item</li>
+        </ul>
+
+        <ul class="list-inline text-uppercase">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item text-lowercase"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- we can define blockquotes using bootstraps styles. -->
+        <!-- Also of note are the margin and padding classes: m and p, followed by a side (t for top, b for bottom, s for start, e for end, x for sides, y for top and bottom, and blank for all sides), then a dash and the size of the spacing (0-5). We can also apply the breakpoint infixes. -->
+        <blockquote class="blockquote m-5">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatem possimus quisquam unde. Aperiam ullam veritatis perferendis iste, alias neque iusto non. Sint asperiores doloribus blanditiis error debitis temporibus quam.</p>
+            <footer class="blockquote-footer p-0 ps-md-3 pt-md-3">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+
+        <h1 class="display-1  text-primary">color</h1>
+        <hr>
+
+        <p class="text-danger">Hello there!</p>
+
+        <!-- You can set the background and text colour with several bootstrap classes -->
+        <p class="bg-dark text-warning">Warning!</p>
+        <p class="bg-dark text-warning text-opacity-75">Warning!</p>
+        <p class="bg-dark text-warning text-opacity-50">Warning!</p>
+        <p class="bg-dark text-warning text-opacity-25">Warning!</p>
+
+        <p class="bg-dark text-warning bg-opacity-25">Warning!</p>
+
+
+        <h1 class="display-1">Images</h1>
+        <hr>
+
+        <!-- We can set img-fluid to constrain images to the size of the container they're in. -->
+        <img src="https://dummyimage.com/1000x600/000/fff" alt="" class="img-fluid">
+
+        <!-- We can apply a thumbnail style to images with img-thumbnail -->
+        <img src="https://dummyimage.com/200x200/000/fff" alt="" class="img-thumbnail m-3">
+
+        <!-- We can use float-start and float-end to have images sit to the left or right of their neighbours. -->
+        <div class="mb-5">
+            <p>
+                <img src="https://dummyimage.com/200x200/000/fff" alt="" class="float-start me-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consectetur quidem. Deserunt omnis modi sunt, corporis deleniti vitae molestias est nemo fuga! Delectus veniam quae eius tempore, in quia dicta.
+            </p>
+            <p>
+                <img src="https://dummyimage.com/200x200/000/fff" alt="" class="float-end ms-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consectetur quidem. Deserunt omnis modi sunt, corporis deleniti vitae molestias est nemo fuga! Delectus veniam quae eius tempore, in quia dicta.
+            </p>
+        </div>
+
+
+        <!-- we can take advantage of the text alignment of a containing div to align inline images to the center or end like text -->
+        <div class="text-center">
+            <img src="https://dummyimage.com/200x200/000/fff" alt="" class="rounded">
+        </div>
+
+        <!-- We can set img tags (and other inline elements) to display block, and put mx-auto to set the left and right margins to auto, which will have the effect of centering the image -->
+        <img src="https://dummyimage.com/200x200/000/fff" alt="" class="d-block mx-auto my-5">
+
+        <!-- if using picture and source, make sure you apply your classes to the img tag and not the picture tag. -->
+        <picture>
+            <source srcset="https://dummyimage.com/600x600/000/fff,
+                            https://dummyimage.com/1200x1200/000/fff 2x"
+                    media="(max-width: 600px)">
+            <source srcset="https://dummyimage.com/900x900/000/fff,
+                            https://dummyimage.com/1800x1800/000/fff 2x"
+                    media="(min-width: 600px)">
+            <img src="https://dummyimage.com/200x200/000/fff" alt="" class="img-fluid d-block mx-auto">
+        </picture>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
